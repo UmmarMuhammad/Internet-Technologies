@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <LINK rel="Stylesheet" href="Styles_Umr.css"/>
+        <title>Internet Technologies</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <h1>hi, this is my first website page...</h1>
+
+        <!--<button onclick="validateForm()">hello</button>-->
+        <script src="Script_Umr.js"></script>
+
+        <form name="Servlets" action="Servlets" method="post">
+            <label for="num1">use config/context:</label><br>
+          
+            <input type="submit" value="Submit"> 
+            <input type="reset" value="Reset"> 
+        </form>
+
+        <form name="intTech" action="Add" method="post" onsubmit="return validateForm()">
+            <label for="num1">1st No.:</label><br>
+            <input type="text" id="num1" name="num1" value="5"><br>
+            <label for="num2">2nd No.:</label><br>
+            <input type="text" id="num2" name="num2" value="8"><br><br>
+
+            <input type="submit" value="Submit"> 
+            <input type="reset" value="Reset"> 
+        </form>
+        <form action="Sub" method="post">
+            <label for="num1">1st No.:</label><br>
+            <input type="text" id="num1" name="num1" value="5"><br>
+            <label for="num2">2nd No.:</label><br>
+            <input type="text" id="num2" name="num2" value="8"><br><br>
+
+            <input type="submit" value="Submit"> 
+            <input type="reset" value="Reset"> 
+        </form>
+
+        <form action="OddEven" method="post">
+            <label for="num1">1st No.:</label><br>
+            <input type="text" id="num1" name="num1" value="5"><br>
+            <label for="Method">Redirect Method:</label><br><br>
+
+            <select name="Method" id="method">
+                <option value="1">URL Re-writing</option>
+                <option value="2">Session</option>
+                <option value="3">Cookies</option>
+            </select><br><br>
+
+            <input type="submit" value="Submit"> 
+            <input type="reset" value="Reset"> 
+        </form>
+        
+        <form name="ann" action="myAnn" method="post">
+            <label for="num1">annotations:</label><br>
+
+            <input type="submit" value="Submit"> 
+        </form>
+
+        <!--        <iframe src="/Add" width="200" height="200" style="float:right">
+                    
+                </iframe>-->
+        
+         <form name="sp" action="Page_Umr.jsp" method="get">
+            <label for="num1">JSP</label><br>
+            <label for="num1">1st No.:</label><br>
+            <input type="text" id="num1" name="num1" value="5"><br>
+            <label for="num2">2nd No.:</label><br>
+            <input type="text" id="num2" name="num2" value="8"><br><br>
+
+            <input type="submit" value="Submit"> 
+        </form>
+    </body>
+</html>
