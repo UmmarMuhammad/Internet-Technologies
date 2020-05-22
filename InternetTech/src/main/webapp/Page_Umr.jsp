@@ -2,9 +2,10 @@
     Document   : ServerPage
     Created on : May 5, 2020, 3:23:14 PM
     Author     : UMMAR MUHAMMAD
+    Modified on: 2020-05-22  
 --%>
 
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page contentType="text/html" pageEncoding="UTF-8" errorPage="errors.jsp" %>
 <!DOCTYPE html>
 <html>
     <head>
@@ -25,19 +26,28 @@
         %>
         <!--        3. scriptlet tag-->
         <%
-            int n1 = Integer.parseInt(request.getParameter("num1"));
-            int n2 = Integer.parseInt(request.getParameter("num2"));
+            try
+            {
+                int n1 = Integer.parseInt(request.getParameter("num1"));
+                int n2 = Integer.parseInt(request.getParameter("num2"));
 
-            sum = n1 + n2;
-            avg = sum / 2f;
+                sum = n1 + n2;
+                avg = sum / 2f;
 
-            out.println("result = " + sum);
-            Date d = new Date();
-            date = d.getDate();
+                out.println("result = " + sum);
+                Date d = new Date();
+                date = d.getDate();
+                int q = 1 / 0;//exception handled through try-catch
+            } catch (Exception e)
+            {
+                out.println(e.getMessage());
+            }
+            //exception handled through ErrorPage errors.jsp
+            int q = 1 / 0;
         %>
         <!--        4. expression tag-->
         <%=sum%>
         <%=avg%>
-        <%="todays date is = "+date%>
+        <%="todays date is = " + date%>
     </body>
 </html>
