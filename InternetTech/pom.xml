@@ -23,6 +23,12 @@
             <version>${jakartaee}</version>
             <scope>provided</scope>
         </dependency>
+        <!-- MySql 5.5 Connector -->   
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.19</version>
+        </dependency> 
     </dependencies>
     
     <build>

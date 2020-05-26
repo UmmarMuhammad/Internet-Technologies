@@ -222,3 +222,21 @@ class annServlet extends HttpServlet
         out.println("</body></html>");
     }
 }
+
+/**
+ *
+ * @author UMMAR MUHAMMAD
+ */
+@WebServlet("/dispatchToJSP")
+class DisServlet extends HttpServlet
+{
+
+    public void service(HttpServletRequest req, HttpServletResponse res) throws IOException, ServletException
+    {
+        String Name = req.getParameter("num1");
+
+        req.setAttribute("x", Name);
+        RequestDispatcher rd = req.getRequestDispatcher("dispatch.jsp");
+        rd.forward(req, res);
+    }
+}
