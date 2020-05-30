@@ -7,6 +7,8 @@ package com.mycompany.webapp_umr;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.Arrays;
+import java.util.List;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletConfig;
 import javax.servlet.ServletContext;
@@ -234,9 +236,69 @@ class DisServlet extends HttpServlet
     public void service(HttpServletRequest req, HttpServletResponse res) throws IOException, ServletException
     {
         String Name = req.getParameter("num1");
+        List<Student> stds = Arrays.asList(new Student(91, "apple"), new Student(92, "ball"), new Student(93, "cat"));
 
-        req.setAttribute("x", Name);
-        RequestDispatcher rd = req.getRequestDispatcher("dispatch.jsp");
+        req.setAttribute("attrib", stds);
+        RequestDispatcher rd = null;
+        rd = req.getRequestDispatcher("dispatch.jsp");
         rd.forward(req, res);
+    }
+}
+
+/**
+ *
+ * @author UMMAR MUHAMMAD
+ */
+@WebServlet("/jstlTags")
+class JSTLServlet extends HttpServlet
+{
+
+    public void service(HttpServletRequest req, HttpServletResponse res) throws IOException, ServletException
+    {
+        List<Student> stds = Arrays.asList(new Student(91, "apple"), new Student(92, "ball"), new Student(93, "cat"));
+
+        req.setAttribute("attrib", stds);
+        RequestDispatcher rd = null;
+        rd = req.getRequestDispatcher("tags.jsp");
+        rd.forward(req, res);
+    }
+}
+
+class Student
+{
+
+    int rollNo;
+    String name;
+
+    public Student(int rollNo, String name)
+    {
+        this.rollNo = rollNo;
+        this.name = name;
+    }
+
+    public int getRollNo()
+    {
+        return rollNo;
+    }
+
+    public void setRollNo(int rollNo)
+    {
+        this.rollNo = rollNo;
+    }
+
+    public String getName()
+    {
+        return name;
+    }
+
+    public void setName(String name)
+    {
+        this.name = name;
+    }
+
+    @Override
+    public String toString()
+    {
+        return "Student{" + "rollNo=" + rollNo + ", name=" + name + '}';
     }
 }

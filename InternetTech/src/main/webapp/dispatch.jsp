@@ -15,8 +15,8 @@
         <h1>Dispatched from a servlet to a JSP page</h1>
         <%
             //dispatched from DisServlet
-            String Name = request.getAttribute("x").toString();
-            out.println(Name);
+            String student = request.getAttribute("attrib").toString();
+            out.println(student);
         %>
         
         ${x}
