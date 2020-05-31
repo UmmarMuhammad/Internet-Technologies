@@ -6,38 +6,35 @@
 package com.mycompany.webapp_umr;
 
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.util.Arrays;
 import java.util.List;
 import javax.servlet.RequestDispatcher;
-import javax.servlet.ServletConfig;
-import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
-import javax.servlet.annotation.WebFilter;
 import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 
 /**
  *
  * @author UMMAR MUHAMMAD
  */
-public class Servlets extends HttpServlet
+/**
+ *
+ * @author UMMAR MUHAMMAD
+ */
+@WebServlet("/jstlTags")
+public class JSTLServlet extends HttpServlet
 {
 
     public void service(HttpServletRequest req, HttpServletResponse res) throws IOException, ServletException
     {
-        ServletContext contxt = getServletContext();
-        String str = contxt.getInitParameter("param");
-        PrintWriter out = res.getWriter();
-        out.println(str);
+        List<Student> stds = Arrays.asList(new Student(91, "apple"), new Student(92, "ball"), new Student(93, "cat"));
 
-        ServletConfig config = getServletConfig();
-        str = config.getInitParameter("param");
-
-        out.println(str);
+        req.setAttribute("attrib", stds);
+        RequestDispatcher rd = null;
+        rd = req.getRequestDispatcher("tags.jsp");
+        rd.forward(req, res);
     }
 }
+

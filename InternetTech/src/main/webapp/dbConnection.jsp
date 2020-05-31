@@ -15,6 +15,7 @@
     <body>
         <h1></h1>
         <%
+            int rollno = Integer.parseInt(request.getParameter("num1"));
             String connector = "com.mysql.cj.jdbc.Driver";
             //url of the database server along with the port no. & database name
             String url = "jdbc:mysql://localhost:3306/college";
@@ -38,7 +39,7 @@
 
             //5
             //query the database using a valid query
-            String query = "Select Name from student where RollNo= 10";
+            String query = "Select Name from student where RollNo="+rollno;
             //execute the query specified above, & get the results in resultset
             ResultSet rs = stmt.executeQuery(query);
 

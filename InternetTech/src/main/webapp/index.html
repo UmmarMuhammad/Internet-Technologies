@@ -6,7 +6,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     </head>
     <body>
-        <h1>hi, this is my first website page...</h1>
+        <h1>Welcome to Internet Technologies Lab Course...</h1>
 
         <!--<button onclick="validateForm()">hello</button>-->
         <script src="Script_Umr.js"></script>
@@ -14,21 +14,10 @@
         <form name="Servlets" action="Servlets" method="post">
             <label for="num1">use config/context:</label>
             <input type="submit" value="Submit"> 
-            <input type="reset" value="Reset"> 
         </form>
-        <br>
-
-        <form name="intTech" action="Add" method="post" onsubmit="return validateForm()">
-            <label for="num1">1st No.:</label>
-            <input type="text" id="num1" name="num1" value="5">
-            <label for="num2">2nd No.:</label>
-            <input type="text" id="num2" name="num2" value="8"><
-            <input type="submit" value="Submit"> 
-            <input type="reset" value="Reset"> 
-        </form>
-        
         <br>
         <form action="Sub" method="post">
+            Servlet<br>
             <label for="num1">1st No.:</label>
             <input type="text" id="num1" name="num1" value="5">
             <label for="num2">2nd No.:</label>
@@ -39,34 +28,45 @@
         </form>
         <br>
 
+        <form name="intTech" action="Add" method="post" onsubmit="return validateForm()">
+            Request Dispatch<br>
+            <label for="num1">1st No.:</label>
+            <input type="text" id="num1" name="num1" value="12">
+            <label for="num2">2nd No.:</label>
+            <input type="text" id="num2" name="num2" value="8"><
+            <input type="submit" value="Submit"> 
+            <input type="reset" value="Reset"> 
+        </form>
+
+        <br>
+
+
         <form action="OddEven" method="post">
+            Redirect<br>
             <label for="num1">1st No.:</label>
             <input type="text" id="num1" name="num1" value="5">
-            <label for="Method">Redirect Method:</label>
+            <label for="Method">Method:</label>
 
             <select name="Method" id="method">
                 <option value="1">URL Re-writing</option>
                 <option value="2">Session</option>
                 <option value="3">Cookies</option>
-            </select><br><br>
-
+            </select>
             <input type="submit" value="Submit"> 
             <input type="reset" value="Reset"> 
         </form>
         <br>
 
         <form name="ann" action="myAnn" method="post">
+            Annotations<br>
             <label for="num1">annotations:</label>
 
             <input type="submit" value="Submit"> 
         </form>
         <br>
 
-        <!--        <iframe src="/Add" width="200" height="200" style="float:right">
-                    
-                </iframe>-->
-
         <form name="sp" action="Page_Umr.jsp" method="get">
+            JSP<br>
             <label for="num1">JSP</label>
             <label for="num1">1st No.:</label>
             <input type="text" id="num1" name="num1" value="5">
@@ -77,7 +77,8 @@
         <br>
 
         <form name="jd" action="dbConnection.jsp" method="get">
-            <label for="num1">JDBC</label>
+            JDBC<br>
+            
             <label for="num1">Roll No.:</label>
             <input type="text" id="num1" name="num1" value="5">
             <input type="submit" value="Submit"> 
@@ -85,28 +86,24 @@
         <br>
 
         <form name="disp" action="dispatchToJSP" method="get">
+            Servlet 2 JSP<br>
             <label for="num1">Servlet to JSP</label>
             <label for="num1">Name:</label>
             <input type="text" id="num1" name="num1" value="ummar muhammad">
             <input type="submit" value="Submit"> 
         </form>
         <br>
-        <!--        
-        <form name="tags" action="tags.jsp" method="get">
-            <label for="num1">tag lib</label>
-            <label for="num1">Name:</label>
-            <input type="text" id="num1" name="num1" value="ummar muhammad">
-            <input type="submit" value="Submit"> 
-        </form>-->
-
+     
         <form name="tags" action="jstlTags" method="get">
+            TagLib through Servlets<br>
             <label for="num1">tag lib through servlet</label>
             <label for="num1">Name:</label>
             <input type="text" id="num1" name="num1" value="ummar muhammad">
             <input type="submit" value="Submit"> 
         </form>
         <br> 
-         <form name="tags" action="tags.jsp" method="get">
+        <form name="tags" action="tags.jsp" method="get">
+            TagLib through JSP<br>
             <label for="num1">tag lib through jsp</label>
             <label for="num1">Name:</label>
             <input type="text" id="num1" name="num1" value="ummar muhammad">

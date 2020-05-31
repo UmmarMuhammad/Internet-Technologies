@@ -18,23 +18,23 @@
         <url-pattern>/Servlets</url-pattern>
     </servlet-mapping>
     
-    <servlet>
+<!--    <servlet>
         <servlet-name>um</servlet-name>
-        <servlet-class>com.mycompany.webapp_umr.AddServlet</servlet-class>
+        <servlet-class>com.mycompany.webapp_umr.Servlets.AddServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>um</servlet-name>
         <url-pattern>/Add</url-pattern>
-    </servlet-mapping>
+    </servlet-mapping>-->
         
-    <servlet>
+<!--    <servlet>
         <servlet-name>mr</servlet-name>
         <servlet-class>com.mycompany.webapp_umr.SqServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>mr</servlet-name>
         <url-pattern>/Sq</url-pattern>
-    </servlet-mapping>
+    </servlet-mapping>-->
     
     <servlet>
         <servlet-name>mu</servlet-name>
@@ -74,7 +74,7 @@
     
     <servlet>
         <servlet-name>dd</servlet-name>
-        <servlet-class>com.mycompany.webapp_umr.ModCookieServlet</servlet-class>
+        <servlet-class>com.mycompany.webapp_umr.ModCookiesServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>dd</servlet-name>
