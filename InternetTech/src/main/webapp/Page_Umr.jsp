@@ -26,10 +26,11 @@
         %>
         <!--        3. scriptlet tag-->
         <%
+            int n2 = 0;
             try
             {
                 int n1 = Integer.parseInt(request.getParameter("num1"));
-                int n2 = Integer.parseInt(request.getParameter("num2"));
+                n2 = Integer.parseInt(request.getParameter("num2"));
 
                 sum = n1 + n2;
                 avg = sum / 2f;
@@ -37,13 +38,13 @@
                 out.println("result = " + sum);
                 Date d = new Date();
                 date = d.getDate();
-                int q = 1 / 0;//exception handled through try-catch
+                //int q = 1 / 0;//exception handled through try-catch
             } catch (Exception e)
             {
                 out.println(e.getMessage());
             }
             //exception handled through ErrorPage errors.jsp
-            int q = 1 / 0;
+            int q = 1 / n2;
         %>
         <!--        4. expression tag-->
         <%=sum%>

@@ -10,10 +10,10 @@ and open the template in the editor.
 
 body 
 {
-    background-color: azure;
+    background-color: cadetblue;
     text-decoration: goldenrod;
     color: black;
-    font-family: calibri;
+    font-family:cursive;
     font-size:small;
     font-weight: normal;
 }
