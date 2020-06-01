@@ -23,7 +23,7 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author UMMAR MUHAMMAD
  */
-@WebServlet("/jstlTags")
+@WebServlet("/JSTLServlet")
 public class JSTLServlet extends HttpServlet
 {
 
@@ -33,7 +33,7 @@ public class JSTLServlet extends HttpServlet
 
         req.setAttribute("attrib", stds);
         RequestDispatcher rd = null;
-        rd = req.getRequestDispatcher("tags.jsp");
+        rd = req.getRequestDispatcher("JSTLTags.jsp");
         rd.forward(req, res);
     }
 }

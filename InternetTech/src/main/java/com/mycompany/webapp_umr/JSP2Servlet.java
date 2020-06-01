@@ -22,7 +22,7 @@ import javax.servlet.http.HttpServletResponse;
  * @author UMMAR MUHAMMAD
  */
 @WebServlet("/jsp2servlet")
-public class filterServlet extends HttpServlet
+public class JSP2Servlet extends HttpServlet
 {
 
     public void service(HttpServletRequest req, HttpServletResponse res) throws IOException, ServletException
