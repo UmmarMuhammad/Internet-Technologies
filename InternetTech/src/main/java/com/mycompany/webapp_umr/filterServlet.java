@@ -21,15 +21,15 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author UMMAR MUHAMMAD
  */
-@WebServlet("/jsp2servlet")
-public class JSP2Servlet extends HttpServlet
+//@WebServlet("/jsp2servlet")
+public class filterServlet extends HttpServlet
 {
 
     public void service(HttpServletRequest req, HttpServletResponse res) throws IOException, ServletException
     {
-        String name = req.getParameter("num1");
-       
+        int no = Integer.parseInt(req.getParameter("num1"));
+
         PrintWriter out = res.getWriter();
-        out.println("Name = " + name);
+        out.println("Square = " + no*no);
     }
 }

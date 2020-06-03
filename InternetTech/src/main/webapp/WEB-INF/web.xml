@@ -18,7 +18,7 @@
         <url-pattern>/Servlets</url-pattern>
     </servlet-mapping>
     
-<!--    <servlet>
+    <!--    <servlet>
         <servlet-name>um</servlet-name>
         <servlet-class>com.mycompany.webapp_umr.Servlets.AddServlet</servlet-class>
     </servlet>
@@ -27,7 +27,7 @@
         <url-pattern>/Add</url-pattern>
     </servlet-mapping>-->
         
-<!--    <servlet>
+    <!--    <servlet>
         <servlet-name>mr</servlet-name>
         <servlet-class>com.mycompany.webapp_umr.SqServlet</servlet-class>
     </servlet>
@@ -80,6 +80,28 @@
         <servlet-name>dd</servlet-name>
         <url-pattern>/ModCookie</url-pattern>
     </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>filterS</servlet-name>
+        <servlet-class>com.mycompany.webapp_umr.filterServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>filterS</servlet-name>
+        <url-pattern>/jsp2servlet</url-pattern>
+    </servlet-mapping>
+    
+<!--    <filter>
+        <filter-name>ITFilter</filter-name>
+        <filter-class>com.mycompany.webapp_umr.ITFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>ITFilter</filter-name>
+        <servlet-name>filterS</servlet-name>
+    </filter-mapping>
+    <filter-mapping>
+        <filter-name>ITFilter</filter-name>
+        <url-pattern>/jsp2servlet</url-pattern>
+    </filter-mapping>-->
     
     <context-param>
         <param-name>param</param-name>
