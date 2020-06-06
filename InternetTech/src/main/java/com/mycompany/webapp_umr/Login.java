@@ -61,19 +61,19 @@ public class Login extends HttpServlet
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException
     {
-        //processRequest(request, response);
-        String user = request.getParameter("user");
-        String pwd = request.getParameter("pwd");
-        if (user.equals("ummar") && pwd.equals("password"))
-        {
-            HttpSession session = request.getSession();
-            session.setAttribute("user", user);
-            session.setAttribute("pwd", pwd);
-            response.sendRedirect("Welcome.jsp");
-        } else
-        {
-            response.sendRedirect("Login.jsp");
-        }
+//        //processRequest(request, response);
+//        String user = request.getParameter("user");
+//        String pwd = request.getParameter("pwd");
+//        if (user.equals("ummar") && pwd.equals("password"))
+//        {
+//            HttpSession session = request.getSession();
+//            session.setAttribute("user", user);
+//            session.setAttribute("pwd", pwd);
+//            response.sendRedirect("Welcome.jsp");
+//        } else
+//        {
+//            response.sendRedirect("Login.jsp");
+//        }
 
     }
 
@@ -89,7 +89,19 @@ public class Login extends HttpServlet
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException
     {
-        processRequest(request, response);
+        //processRequest(request, response);
+        String user = request.getParameter("user");
+        String pwd = request.getParameter("pwd");
+        if (user.equals("ummar") && pwd.equals("password"))
+        {
+            HttpSession session = request.getSession();
+            session.setAttribute("user", user);
+            session.setAttribute("pwd", pwd);
+            response.sendRedirect("Welcome.jsp");
+        } else
+        {
+            response.sendRedirect("Login.jsp");
+        }
     }
 
     /**

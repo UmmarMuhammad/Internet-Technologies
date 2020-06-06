@@ -13,11 +13,11 @@
     </head>
     <body>
         <h1>Hello World!</h1>
-        <form name="Filters" action="Login" method="get"><br/>            
+        <form name="Filters" action="Login" method="post"><br/>            
             <label for="user">User ID: </label>
-            <input type="text" id="user" name="user" value="0"><br>
+            <input type="text" id="user" name="user" value=""><br>
             <label for="pwd">Password</label>
-            <input type="pwd" id="num2" name="pwd" value="">
+            <input type="password" id="num2" name="pwd" value="">
             <input type="submit" value="Submit"> 
         </form>
     </body>

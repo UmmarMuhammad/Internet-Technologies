@@ -12,6 +12,15 @@
         <title>About</title>
     </head>
     <body>
+        <%
+            response.setHeader("Cache-Control", "no-cache, no-store, must-revalidate");
+            if (session.getAttribute("user") == null)
+            {
+                response.sendRedirect("Login.jsp");
+            }
+
+        %>
         <h1>this is the lab course for bca 5th semester of uok... </h1>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/OuBUUkQfBYM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </body>
 </html>
