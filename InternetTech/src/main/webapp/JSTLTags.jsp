@@ -40,11 +40,11 @@
         <br/>
         Length: ${f:length(str)}
         <br/>
-        <form name="Filters" action="jsp2servlet" method="get"><br/>
+<!--        <form name="Filters" action="jsp2servlet" method="get"><br/>
             <label for="num1">Filter</label><br/>
             <label for="num1">Name:</label>
             <input type="text" id="num1" name="num1" value="0">
             <input type="submit" value="Submit"> 
-        </form>
+        </form>-->
     </body>
 </html>

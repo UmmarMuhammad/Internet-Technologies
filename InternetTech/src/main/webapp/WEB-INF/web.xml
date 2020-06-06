@@ -1,10 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
-         version="4.0">
-    
-    
+<web-app version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
     <servlet>
         <servlet-name>ss</servlet-name>
         <servlet-class>com.mycompany.webapp_umr.Servlets</servlet-class>
@@ -17,7 +12,14 @@
         <servlet-name>ss</servlet-name>
         <url-pattern>/Servlets</url-pattern>
     </servlet-mapping>
-    
+    <servlet>
+        <servlet-name>Login</servlet-name>
+        <servlet-class>com.mycompany.webapp_umr.Login</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Login</servlet-name>
+        <url-pattern>/Login</url-pattern>
+    </servlet-mapping>
     <!--    <servlet>
         <servlet-name>um</servlet-name>
         <servlet-class>com.mycompany.webapp_umr.Servlets.AddServlet</servlet-class>
@@ -26,7 +28,6 @@
         <servlet-name>um</servlet-name>
         <url-pattern>/Add</url-pattern>
     </servlet-mapping>-->
-        
     <!--    <servlet>
         <servlet-name>mr</servlet-name>
         <servlet-class>com.mycompany.webapp_umr.SqServlet</servlet-class>
@@ -35,16 +36,18 @@
         <servlet-name>mr</servlet-name>
         <url-pattern>/Sq</url-pattern>
     </servlet-mapping>-->
-    
     <servlet>
         <servlet-name>mu</servlet-name>
         <servlet-class>com.mycompany.webapp_umr.SubServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Logout</servlet-name>
+        <servlet-class>com.mycompany.webapp_umr.Logout</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>mu</servlet-name>
         <url-pattern>/Sub</url-pattern>
     </servlet-mapping>
-    
     <servlet>
         <servlet-name>ha</servlet-name>
         <servlet-class>com.mycompany.webapp_umr.OddEvenServlet</servlet-class>
@@ -53,7 +56,6 @@
         <servlet-name>ha</servlet-name>
         <url-pattern>/OddEven</url-pattern>
     </servlet-mapping>
-    
     <servlet>
         <servlet-name>mm</servlet-name>
         <servlet-class>com.mycompany.webapp_umr.ModServlet</servlet-class>
@@ -62,7 +64,6 @@
         <servlet-name>mm</servlet-name>
         <url-pattern>/Mod</url-pattern>
     </servlet-mapping>
-    
     <servlet>
         <servlet-name>ad</servlet-name>
         <servlet-class>com.mycompany.webapp_umr.ModSessionServlet</servlet-class>
@@ -71,7 +72,6 @@
         <servlet-name>ad</servlet-name>
         <url-pattern>/ModSession</url-pattern>
     </servlet-mapping>
-    
     <servlet>
         <servlet-name>dd</servlet-name>
         <servlet-class>com.mycompany.webapp_umr.ModCookiesServlet</servlet-class>
@@ -80,7 +80,6 @@
         <servlet-name>dd</servlet-name>
         <url-pattern>/ModCookie</url-pattern>
     </servlet-mapping>
-    
     <servlet>
         <servlet-name>filterS</servlet-name>
         <servlet-class>com.mycompany.webapp_umr.filterServlet</servlet-class>
@@ -89,8 +88,7 @@
         <servlet-name>filterS</servlet-name>
         <url-pattern>/jsp2servlet</url-pattern>
     </servlet-mapping>
-    
-<!--    <filter>
+    <!--    <filter>
         <filter-name>ITFilter</filter-name>
         <filter-class>com.mycompany.webapp_umr.ITFilter</filter-class>
     </filter>
@@ -102,7 +100,6 @@
         <filter-name>ITFilter</filter-name>
         <url-pattern>/jsp2servlet</url-pattern>
     </filter-mapping>-->
-    
     <context-param>
         <param-name>param</param-name>
         <param-value>context used</param-value>
@@ -111,8 +108,10 @@
         <param-name>credits</param-name>
         <param-value>60</param-value>
     </context-param>
-   
-    
+    <servlet-mapping>
+        <servlet-name>Logout</servlet-name>
+        <url-pattern>/Logout</url-pattern>
+    </servlet-mapping>
     <session-config>
         <session-timeout>
             30
