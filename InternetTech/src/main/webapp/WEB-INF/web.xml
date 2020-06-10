@@ -8,6 +8,7 @@
             <param-value>configuration used</param-value>
         </init-param>
     </servlet>
+   
     <servlet-mapping>
         <servlet-name>ss</servlet-name>
         <url-pattern>/Servlets</url-pattern>
@@ -111,6 +112,14 @@
     <servlet-mapping>
         <servlet-name>Logout</servlet-name>
         <url-pattern>/Logout</url-pattern>
+    </servlet-mapping>
+     <servlet>
+        <servlet-name>ITBeanServlet</servlet-name>
+        <servlet-class>com.mycompany.webapp_umr.ITBeanServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ITBeanServlet</servlet-name>
+        <url-pattern>/ITBeanServlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
