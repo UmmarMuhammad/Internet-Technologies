@@ -2,20 +2,19 @@
 <web-app version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
     <servlet>
         <servlet-name>ss</servlet-name>
-        <servlet-class>com.mycompany.webapp_umr.Servlets</servlet-class>
+        <servlet-class>com.UmmarMuhammad.InternetTech.Servlets</servlet-class>
         <init-param>
             <param-name>param</param-name>
             <param-value>configuration used</param-value>
         </init-param>
     </servlet>
-   
     <servlet-mapping>
         <servlet-name>ss</servlet-name>
         <url-pattern>/Servlets</url-pattern>
     </servlet-mapping>
     <servlet>
         <servlet-name>Login</servlet-name>
-        <servlet-class>com.mycompany.webapp_umr.Login</servlet-class>
+        <servlet-class>com.UmmarMuhammad.InternetTech.Login</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>Login</servlet-name>
@@ -39,11 +38,11 @@
     </servlet-mapping>-->
     <servlet>
         <servlet-name>mu</servlet-name>
-        <servlet-class>com.mycompany.webapp_umr.SubServlet</servlet-class>
+        <servlet-class>com.UmmarMuhammad.InternetTech.SubServlet</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>Logout</servlet-name>
-        <servlet-class>com.mycompany.webapp_umr.Logout</servlet-class>
+        <servlet-class>com.UmmarMuhammad.InternetTech.Logout</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>mu</servlet-name>
@@ -51,7 +50,7 @@
     </servlet-mapping>
     <servlet>
         <servlet-name>ha</servlet-name>
-        <servlet-class>com.mycompany.webapp_umr.OddEvenServlet</servlet-class>
+        <servlet-class>com.UmmarMuhammad.InternetTech.OddEvenServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>ha</servlet-name>
@@ -59,7 +58,7 @@
     </servlet-mapping>
     <servlet>
         <servlet-name>mm</servlet-name>
-        <servlet-class>com.mycompany.webapp_umr.ModServlet</servlet-class>
+        <servlet-class>com.UmmarMuhammad.InternetTech.ModServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>mm</servlet-name>
@@ -67,7 +66,7 @@
     </servlet-mapping>
     <servlet>
         <servlet-name>ad</servlet-name>
-        <servlet-class>com.mycompany.webapp_umr.ModSessionServlet</servlet-class>
+        <servlet-class>com.UmmarMuhammad.InternetTech.ModSessionServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>ad</servlet-name>
@@ -75,7 +74,7 @@
     </servlet-mapping>
     <servlet>
         <servlet-name>dd</servlet-name>
-        <servlet-class>com.mycompany.webapp_umr.ModCookiesServlet</servlet-class>
+        <servlet-class>com.UmmarMuhammad.InternetTech.ModCookiesServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>dd</servlet-name>
@@ -83,7 +82,7 @@
     </servlet-mapping>
     <servlet>
         <servlet-name>filterS</servlet-name>
-        <servlet-class>com.mycompany.webapp_umr.filterServlet</servlet-class>
+        <servlet-class>com.UmmarMuhammad.InternetTech.filterServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>filterS</servlet-name>
@@ -91,7 +90,7 @@
     </servlet-mapping>
     <!--    <filter>
         <filter-name>ITFilter</filter-name>
-        <filter-class>com.mycompany.webapp_umr.ITFilter</filter-class>
+        <filter-class>com.mycompany.InternetTech.ITFilter</filter-class>
     </filter>
     <filter-mapping>
         <filter-name>ITFilter</filter-name>
@@ -113,9 +112,9 @@
         <servlet-name>Logout</servlet-name>
         <url-pattern>/Logout</url-pattern>
     </servlet-mapping>
-     <servlet>
+    <servlet>
         <servlet-name>ITBeanServlet</servlet-name>
-        <servlet-class>com.mycompany.webapp_umr.ITBeanServlet</servlet-class>
+        <servlet-class>com.UmmarMuhammad.InternetTech.ITBeanServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>ITBeanServlet</servlet-name>
