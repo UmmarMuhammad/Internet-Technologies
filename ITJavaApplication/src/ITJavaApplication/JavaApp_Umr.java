@@ -21,6 +21,7 @@ public class JavaApp_Umr {
     public static void main(String[] args) {
         // TODO code application logic here
 
+                    new ITForm().setVisible(true);
         System.out.println("Welcome, enter b for basic, s for static, a for arrays, & j for JDBC!");
         Scanner scan = new Scanner(System.in);
         String choice = scan.next();
