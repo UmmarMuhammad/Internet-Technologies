@@ -8,6 +8,10 @@
             <param-value>configuration used</param-value>
         </init-param>
     </servlet>
+    <servlet>
+        <servlet-name>ITIntrospectServlet</servlet-name>
+        <servlet-class>com.UmmarMuhammad.InternetTech.ITIntrospectServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>ss</servlet-name>
         <url-pattern>/Servlets</url-pattern>
@@ -119,6 +123,10 @@
     <servlet-mapping>
         <servlet-name>ITBeanServlet</servlet-name>
         <url-pattern>/ITBeanServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ITIntrospectServlet</servlet-name>
+        <url-pattern>/ITIntrospectServlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
