@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.UmmarMuhammad.InternetTech;
+package com.Controller.InternetTech;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -17,7 +17,7 @@ import javax.servlet.http.HttpSession;
  *
  * @author UMMAR MUHAMMAD
  */
-public class Logout extends HttpServlet
+public class Login extends HttpServlet
 {
 
     /**
@@ -39,10 +39,10 @@ public class Logout extends HttpServlet
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet Logout</title>");            
+            out.println("<title>Servlet Login</title>");
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1>Servlet Logout at " + request.getContextPath() + "</h1>");
+            out.println("<h1>Servlet Login at " + request.getContextPath() + "</h1>");
             out.println("</body>");
             out.println("</html>");
         }
@@ -61,11 +61,20 @@ public class Logout extends HttpServlet
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException
     {
-        //processRequest(request, response);
-        HttpSession session = request.getSession();
-        session.removeAttribute("user");
-        session.invalidate();
-        response.sendRedirect("Login.jsp");
+//        //processRequest(request, response);
+//        String user = request.getParameter("user");
+//        String pwd = request.getParameter("pwd");
+//        if (user.equals("ummar") && pwd.equals("password"))
+//        {
+//            HttpSession session = request.getSession();
+//            session.setAttribute("user", user);
+//            session.setAttribute("pwd", pwd);
+//            response.sendRedirect("Welcome.jsp");
+//        } else
+//        {
+//            response.sendRedirect("Login.jsp");
+//        }
+
     }
 
     /**
@@ -80,7 +89,19 @@ public class Logout extends HttpServlet
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException
     {
-        processRequest(request, response);
+        //processRequest(request, response);
+        String user = request.getParameter("user");
+        String pwd = request.getParameter("pwd");
+        if (user.equals("ummar") && pwd.equals("password"))
+        {
+            HttpSession session = request.getSession();
+            session.setAttribute("user", user);
+            session.setAttribute("pwd", pwd);
+            response.sendRedirect("Welcome.jsp");
+        } else
+        {
+            response.sendRedirect("Login.jsp");
+        }
     }
 
     /**

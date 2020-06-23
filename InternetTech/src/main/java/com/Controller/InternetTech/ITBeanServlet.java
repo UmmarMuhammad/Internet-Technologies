@@ -1,10 +1,11 @@
-package com.UmmarMuhammad.InternetTech;
+package com.Controller.InternetTech;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+import com.Model.InternetTech.ITBean;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.ejb.EJB;

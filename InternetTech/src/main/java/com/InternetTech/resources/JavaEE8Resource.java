@@ -1,4 +1,4 @@
-package com.UmmarMuhammad.InternetTech.resources;
+package com.InternetTech.resources;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;

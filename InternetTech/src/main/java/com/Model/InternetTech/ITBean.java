@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.UmmarMuhammad.InternetTech;
+package com.Model.InternetTech;
 
 /**
  *
@@ -46,7 +46,7 @@ public class ITBean
         this.sum = sum;
     }
 
-    void add()
+    public void add()
     {
         sum = num1 + num2;
     }

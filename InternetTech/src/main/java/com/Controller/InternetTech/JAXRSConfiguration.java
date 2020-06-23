@@ -1,4 +1,4 @@
-package com.UmmarMuhammad.InternetTech;
+package com.Controller.InternetTech;
 
 import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Application;

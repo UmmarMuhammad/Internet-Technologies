@@ -2,7 +2,7 @@
 <web-app version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
     <servlet>
         <servlet-name>ss</servlet-name>
-        <servlet-class>com.UmmarMuhammad.InternetTech.Servlets</servlet-class>
+        <servlet-class>com.Controller.InternetTech.Servlets</servlet-class>
         <init-param>
             <param-name>param</param-name>
             <param-value>configuration used</param-value>
@@ -10,7 +10,7 @@
     </servlet>
     <servlet>
         <servlet-name>ITIntrospectServlet</servlet-name>
-        <servlet-class>com.UmmarMuhammad.InternetTech.ITIntrospectServlet</servlet-class>
+        <servlet-class>com.Controller.InternetTech.ITIntrospectServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>ss</servlet-name>
@@ -18,7 +18,7 @@
     </servlet-mapping>
     <servlet>
         <servlet-name>Login</servlet-name>
-        <servlet-class>com.UmmarMuhammad.InternetTech.Login</servlet-class>
+        <servlet-class>com.Controller.InternetTech.Login</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>Login</servlet-name>
@@ -42,11 +42,11 @@
     </servlet-mapping>-->
     <servlet>
         <servlet-name>mu</servlet-name>
-        <servlet-class>com.UmmarMuhammad.InternetTech.SubServlet</servlet-class>
+        <servlet-class>com.Controller.InternetTech.SubServlet</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>Logout</servlet-name>
-        <servlet-class>com.UmmarMuhammad.InternetTech.Logout</servlet-class>
+        <servlet-class>com.Controller.InternetTech.Logout</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>mu</servlet-name>
@@ -54,7 +54,7 @@
     </servlet-mapping>
     <servlet>
         <servlet-name>ha</servlet-name>
-        <servlet-class>com.UmmarMuhammad.InternetTech.OddEvenServlet</servlet-class>
+        <servlet-class>com.Controller.InternetTech.OddEvenServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>ha</servlet-name>
@@ -62,7 +62,7 @@
     </servlet-mapping>
     <servlet>
         <servlet-name>mm</servlet-name>
-        <servlet-class>com.UmmarMuhammad.InternetTech.ModServlet</servlet-class>
+        <servlet-class>com.Controller.InternetTech.ModURLRWServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>mm</servlet-name>
@@ -70,7 +70,7 @@
     </servlet-mapping>
     <servlet>
         <servlet-name>ad</servlet-name>
-        <servlet-class>com.UmmarMuhammad.InternetTech.ModSessionServlet</servlet-class>
+        <servlet-class>com.Controller.InternetTech.ModSessionServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>ad</servlet-name>
@@ -78,7 +78,7 @@
     </servlet-mapping>
     <servlet>
         <servlet-name>dd</servlet-name>
-        <servlet-class>com.UmmarMuhammad.InternetTech.ModCookiesServlet</servlet-class>
+        <servlet-class>com.Controller.InternetTech.ModCookiesServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>dd</servlet-name>
@@ -86,7 +86,7 @@
     </servlet-mapping>
     <servlet>
         <servlet-name>filterS</servlet-name>
-        <servlet-class>com.UmmarMuhammad.InternetTech.filterServlet</servlet-class>
+        <servlet-class>com.Controller.InternetTech.filterServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>filterS</servlet-name>
@@ -118,7 +118,7 @@
     </servlet-mapping>
     <servlet>
         <servlet-name>ITBeanServlet</servlet-name>
-        <servlet-class>com.UmmarMuhammad.InternetTech.ITBeanServlet</servlet-class>
+        <servlet-class>com.Controller.InternetTech.ITBeanServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>ITBeanServlet</servlet-name>
